@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:XamForms.Controls;assembly=XamForms.Controls.Calendar"
+    x:Class="HumanDetection.AnalyticsPage">
+
+    <Grid>
+
+           <!--Top part of layout-->
+         <StackLayout Margin="10,50,10,10">
+
+          
+      
+              <Label Text="Analytics" HorizontalOptions="Center" TextColor="Black" FontSize="40" FontAttributes="Bold"/>
+
+
+            <StackLayout Margin="10,20,10,0">
+                       <!-- Calendar -->
+                    <controls:Calendar
+                                    x:Name="Calendar"
+                                    Padding="10,0,10,0"
+                                    DisabledBorderColor="Black"
+                                    SelectedBorderWidth="4"
+                                    ShowNumberOfWeek="false"
+                                    StartDay="Monday"
+                                    IsEnabled="False"
+                                    TitleLabelTextColor="Black"
+                                    TitleLeftArrowIsVisible="False"
+                                    TitleRightArrowIsVisible="False"/>
+
+
+             <!--Image Details section-->
+                <StackLayout  Orientation="Vertical" Margin="0,10,50,0" Padding="0,0,0,0">
+
+                    <StackLayout Orientation="Horizontal">
+                         <Label Text="This month humans detected: "/>
+                         <Label x:Name="Month_Date_Text" Text="0" HorizontalOptions="EndAndExpand" FontAttributes="Bold" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                         <Label Text="This week humans detected: "/>
+                         <Label x:Name="Week_Date_Text" Text="0" HorizontalOptions="EndAndExpand" FontAttributes="Bold" />
+                    </StackLayout>
+
+                      <StackLayout Orientation="Horizontal">
+                         <Label Text="Today humans detected: "/>
+                         <Label x:Name="Today_Date_Text" Text="0" HorizontalOptions="EndAndExpand" FontAttributes="Bold" />
+                    </StackLayout>
+                    
+                </StackLayout>
+            </StackLayout>
+
+
+       
+            
+      
+
+
+        
+
+        </StackLayout>
+
+       
+     
+           <!--Navigation Start-->
+             <Frame   BackgroundColor="White"
+                      CornerRadius="0"
+                      VerticalOptions="End" 
+                      HorizontalOptions="FillAndExpand"                              
+                      HeightRequest="70"                              
+                      Padding="10,15,10,10">
+
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="Back"
+                            Clicked="Back_Button_Clicked"
+                            HorizontalOptions="StartAndExpand"
+                            TextColor="Black"
+                            Padding="20"
+                            BorderColor="Black"
+                            BorderRadius="30"
+                            BorderWidth="2"/>
+
+                    <Button Text="Sound OFF"
+                            x:Name="Sound_Button"
+                            Clicked="Sound_Button_Clicked"
+                            HorizontalOptions="CenterAndExpand"
+                            TextColor="Black"
+                            Padding="20"
+                            BorderColor="Black"
+                            BorderRadius="30"
+                            BorderWidth="2"/>
+
+                    <Button Text="Logout"
+                            Clicked="Logout_Button_Clicked"
+                            HorizontalOptions="EndAndExpand"
+                            TextColor="Black"
+                            Padding="20"
+                            BorderColor="Black"
+                            BorderRadius="30"
+                            BorderWidth="2"/>
+                   
+                </StackLayout>
+
+            </Frame>
+              <!--Navigation End-->
+       
+    </Grid>
+   
+
+
+
+</ContentPage>

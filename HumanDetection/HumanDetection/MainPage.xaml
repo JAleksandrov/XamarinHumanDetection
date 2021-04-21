@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="HumanDetection.MainPage">
+    <Grid>
+
+         <StackLayout Margin="10,50,10,10">
+
+            <StackLayout Margin="10,20,10,0">
+                 <!--Top Start-->
+                <Image x:Name="Current_Image" Source="Images/loading.gif"/>
+                <Label x:Name="Not_Detected_Text" IsVisible="false" HorizontalOptions="Center" FontAttributes="Bold" Text= "No Human has been detected" />
+                <StackLayout x:Name="Image_Description" IsVisible="false" Orientation="Vertical" Padding="0,0,0,0">
+
+                    <StackLayout Orientation="Horizontal">
+                         <Label Text="Confidence: "/>
+                         <Label x:Name="Confidence_Text" Text="88%" FontAttributes="Bold" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal">
+                         <Label Text="Date: "/>
+                         <Label x:Name="Date_Text" Text="12.12.2001 - 21:59" FontAttributes="Bold" />
+                    </StackLayout>
+                    
+                </StackLayout>
+                 <!--Top End-->
+            </StackLayout>
+
+              <!--Image Control Start-->
+            <StackLayout Margin="10,60,10,0" x:Name="Image_Controls" IsVisible="false" Orientation="Horizontal">
+
+                <Button Padding="10"
+                        HorizontalOptions="StartAndExpand"
+                        CornerRadius="10"
+                        Text="Back"
+                        Clicked="Back_Button_Clicked"
+                        FontSize="40"
+                        BackgroundColor="White"
+                        BorderWidth="3"
+                        BorderColor="Black"
+                        TextColor="Black"  />
+
+                <Button Padding="10"
+                        HorizontalOptions="EndAndExpand"
+                        CornerRadius="10"
+                        Text="Next"
+                        Clicked="Next_Button_Clicked"
+                        FontSize="40"
+                        BackgroundColor="White"
+                        BorderWidth="3"
+                        BorderColor="Black"
+                        TextColor="Black"  />
+
+
+            </StackLayout>
+             <!--Image Control End-->
+      
+
+
+        
+
+        </StackLayout>
+
+       
+     
+             <!--Navigation Start-->
+             <Frame   BackgroundColor="White"
+                      CornerRadius="0"
+                      VerticalOptions="End" 
+                      HorizontalOptions="FillAndExpand"                              
+                      HeightRequest="70"                              
+                      Padding="10,15,10,10">
+
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="Analytics"
+                            Clicked="Analytics_Button_Clicked"
+                            HorizontalOptions="StartAndExpand"
+                            TextColor="Black"
+                            Padding="10"
+                            BorderColor="Black"
+                            BorderRadius="30"
+                            BorderWidth="2"/>
+
+                    <Button Text="Sound OFF"
+                            x:Name="Sound_Button"
+                            Clicked="Sound_Button_Clicked"
+                            HorizontalOptions="CenterAndExpand"
+                            TextColor="Black"
+                            Padding="20"
+                            BorderColor="Black"
+                            BorderRadius="30"
+                            BorderWidth="2"/>
+
+                    <Button Text="Logout"
+                            Clicked="Logout_Button_Clicked"
+                            HorizontalOptions="EndAndExpand"
+                            TextColor="Black"
+                            Padding="20"
+                            BorderColor="Black"
+                            BorderRadius="30"
+                            BorderWidth="2"/>
+                   
+                </StackLayout>
+
+            </Frame>
+              <!--Navigation End-->
+       
+    </Grid>
+   
+</ContentPage>

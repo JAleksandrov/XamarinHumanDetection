@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="HumanDetection.LoginPage">
+
+    <StackLayout  Margin="10,50,10,10">
+        <!--Title and Logo Sectiont-->
+            <Label Text="HumanDetection" HorizontalOptions="Center" TextColor="Black" FontSize="40" FontAttributes="Bold"/>
+            <Image Source="Images/logo.png" HeightRequest="200" WidthRequest="200"/>
+          
+
+            <StackLayout Padding="0,0,0,0">
+                 <!--Username and Password Section-->
+                <Entry Placeholder="USERNAME" Keyboard="Text" x:Name="EntryUsername"  PlaceholderColor="Gray" TextColor="Black"/>
+                <Entry IsPassword="True" Placeholder="PASSWORD" x:Name="EntryPassword"  PlaceholderColor="Gray"  TextColor="Black"/>
+
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                 <!--Remember Me Section-->
+                    <CheckBox x:Name="Remember_Me_Checkbox"/>
+                  
+                     <Label Text="Remember Me" VerticalOptions="Center"/>
+
+            </StackLayout>
+
+
+
+            </StackLayout>
+
+
+         <!--Login Button-->
+            <Button Clicked="Button_Clicked" Margin="0,20,0,0" CornerRadius="10" Text="LOGIN" FontSize="20" BorderColor="Black" BorderWidth="3" BackgroundColor="White" HorizontalOptions="Fill" TextColor="Black"  />
+
+
+    </StackLayout>
+
+</ContentPage>

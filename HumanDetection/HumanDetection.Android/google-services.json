@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "940031238317",
+    "firebase_url": "https://sos-direct-9a19b.firebaseio.com",
+    "project_id": "sos-direct-9a19b",
+    "storage_bucket": "sos-direct-9a19b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940031238317:android:eb416d02468a0f6c086624",
+        "android_client_info": {
+          "package_name": "com.bluetosec.sosdata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940031238317-aimaggq87u9hkp9d3k3s4no5vkpkpm3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDerIu3cLd_D-tUfNJchv4fVMNhOQC3l1U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940031238317-aimaggq87u9hkp9d3k3s4no5vkpkpm3v.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "940031238317-ep9o37f1t5dl3p3ehjqm5cuerud54e1e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.bluetosec.freealarm"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
